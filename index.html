@@ -1,1 +1,251 @@
-Hello World
+<!DOCTYPE html>
+<html>
+    <title>SHIDDARTH BISTA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+    body,h1,h2 {
+        font-family: "Montserrat", sans-serif;
+    }
+
+    .w3-bar-block .w3-bar-item {
+        padding:20px
+    }
+
+   .w3-center {
+       padding:25px;
+   }
+
+    .homeimage {
+        background-position: center;
+        background-size: cover;
+        background-image: url("clean.jpeg");
+        min-height: 100%;
+  }
+
+ .project{
+   width:100%;
+ }
+
+ .project:after{
+   content:' ';
+   display: block;
+   clear:both;
+ }
+
+ .project .col-left , .project .col-right {
+   width:50%;
+   float:left;
+ }
+ .project .col-left{
+   padding-left: 5%;
+   padding-right: 5%;
+   
+ }
+ 
+ .project .col-left img {
+   max-width: 100%;
+ }
+
+.project a{
+  background-color: #85af4b;
+  padding: 10px 25px;
+  text-decoration: none;
+  color:#ffff;
+  border-radius: 20px;
+  display:inline-block;
+}
+
+.project a:hover{
+  background-color:black;
+}
+
+
+</style>
+
+<body>
+
+<!-- Sidebar (hidden by default) -->
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+    class=" w3-button w3-black w3-padding w3-display-topright"><i class="fa fa-remove"></i></a>
+        <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
+        <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+        <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
+        <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+        <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+
+  </nav>
+
+<!-- Top menu -->
+<div class="w3-top w3-border-bottom border-width:thick ">
+    <div class="w3-white w3-xlarge " style="max-width:1500px; min-height:85px; margin:auto">
+      <div class="w3-button  w3-left" style="padding:25px;"  onclick="w3_open()">☰</div>
+     
+      <div class="w3-center ">SHIDDARTH BISTA</div>
+    </div>
+  </div>
+
+<!--Header -->
+  <header class="homeimage w3-display-container  " style="max-width:1500px; height:600px;" id="home">
+    
+</header>
+
+<!-- About me -->
+  <div class="w3-container w3-light-grey" style="padding:25px 16px" id="about">
+    <div class="w3-container w3-content w3-center w3-padding-24" style="max-width:800px" >
+    <h2 class="w3-wide"><U>ABOUT ME</U></h2>
+    <p class="w3-opacity"><i>Real programmers count from 0</i></p>
+    <p class="w3-justify">  Hello World! I am Shiddarth Bista . My fascination with computers
+      from a young age has led me down a rabbithole and now I have a degree in Computer Science.
+      Looking for a place that I can call home and maybe make a difference in people's lives.
+     </p>
+     <p class="w3-justify">  When I am not coding , I am watching my beloved Liverpool FC or pwning people in DOTA 2.
+     </p>
+
+
+     <!-----NODAL--->
+     <div class="w3-display w3-center w3-container w3-xlarge" style="padding:16px">
+      <button onclick="document.getElementById('coursework').style.display='block'" class="w3-button w3-black">Relevant Coursework</button></p>
+     </div>
+
+     <div id="coursework" class="w3-modal">
+      <div class="w3-modal-content w3-animate-zoom">
+        <div class="w3-container w3-black">
+          <span onclick="document.getElementById('coursework').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+          <h1>Relevant Coursework</h1>
+        </div>
+        <div class="w3-container">
+          <ul class="w3-ul">
+            <li>Data Structures</li>
+            <li>Database Design</li>
+            <li>Discrete Structures</li>
+            <li>Personal Software Engineering</li>
+            <li>System Analysis And Design</li>
+            <li>Compiler Design</li>
+            <li>Operating Systems</li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-display w3-center w3-xlarge " style="padding-top:8px ; font-size:32"><a href="Shiddarth Bista.docx" style="text-decoration:none"><i class="fa fa-file"></i>Resume</a>
+      </div>
+    </div>
+  </div>
+
+ <!--- Skills --->
+    <div class="w3-row-padding w3-center w3-margin-top " id="skills">
+      <div class="w3-center"><U><h2>SKILLS</h2></U></div>
+        <div class="w3-third">
+          <div class="w3-card w3-container" style="min-height:460px">
+          <h3>Programming</h3><br>
+          <i class="fa fa-desktop w3-margin-bottom w3-text-theme" style="font-size:160px"></i>
+          <p>C++ </p>
+          <p>Java </p>
+          
+          </div>
+        </div>
+        
+        <div class="w3-third">
+          <div class="w3-card w3-container" style="min-height:460px">
+          <h3>Web-Based</h3><br>
+          <i class="fa fa-internet-explorer w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+          <p>HTML5 </p>
+          <p>CSS3 </p>
+          <p>ReactJS </p>
+          <p>JavaScript / JSX</p>
+          <p>MySQL </p>
+          <p>Wordpress </p>
+          </div>
+        </div>
+        
+        <div class="w3-third">
+          <div class="w3-card w3-container" style="min-height:460px">
+          <h3>Tools</h3><br>
+          <i class="fa fa-github w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+          <p>Github </p>
+          <p>Heroku </p>
+         
+          </div>
+        </div>
+        </div>
+        
+
+  <!-- Projects -->
+  <div class="w3-container w3-light-grey" style="padding:25px 16px" id="projects">
+    <div class="w3-container w3-content w3-center w3-padding-24" style="max-width:800px" >
+    <h2 class="w3-wide"><U>PROJECTS</U></h2>
+    </div>
+   
+      <div class="project">
+        <div class="col-left">
+            <img src="tutor.png" alt="project image">
+        </div>
+        <div class="col-right">
+            <h4> Trustworthy Tutors</h4>
+            <p>Trustworthy Tutors is an app similar to Uber but instead of drivers you look for tutors. You can create accounts and start looking for tutors right away.
+              After matching with the tutor you can start scheduling an apoointment with the tutor.</p>
+            <P>I worked on the front end part of this web-app using mostly JavaScript , CSS and HTML. Currently working on rebuilding this webapp on a ReactJS framework.</P>
+            <a href="https://trustworthy-tutors.herokuapp.com/ ">LIVE VERSION</a>
+        </div>
+      
+      </div>
+  </div>
+
+    <!-- The Contact Section -->
+   <div class="w3-container  w3-content w3-padding-32" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <hr style="margin:auto;  width:200px; border-color:black" >
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i>Lancaster , PA<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +650 435 7696<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: shiddarthbista@gmail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <footer class="w3-container w3-padding-24 w3-center w3-opacity w3-light-grey w3-medium">
+    <a href="https://github.com/shiddarthbista"><i class="fa fa-github w3-hover-opacity"></i></a>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="copyright">Copyright © 2020 Shiddarth Bista
+    </p>
+  </footer>
+</body>
+
+<script>
+    // Script to open and close sidebar
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+    }
+     
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+    }
+    </script>
+
+
+
+
+</html>
