@@ -16,62 +16,64 @@
         padding:20px
     }
 
-   .w3-center {
+    .w3-center {
        padding:25px;
-   }
+    }
 
     .homeimage {
         background-position: center;
         background-size: cover;
         background-image: url("clean.jpeg");
         min-height: 100%;
-  }
+    }
 
- .project{
-   width:100%;
- }
+    .project{
+        width:100%;
+    }
 
- .project:after{
-   content:' ';
-   display: block;
-   clear:both;
- }
+    .project:after{
+        content:' ';
+        display: block;
+        clear:both;
+    }
 
- .project .col-left , .project .col-right {
-   width:50%;
-   float:left;
- }
- .project .col-left{
-   padding-left: 5%;
-   padding-right: 5%;
-   
- }
+    .project .col-left , .project .col-right {
+        width:50%;
+        float:left;
+    }
+
+    .project .col-left{
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom :20px;
+    }
  
- .project .col-left img {
-   max-width: 100%;
- }
+    .project .col-left img {
+        max-width: 100%;
+    }
 
-.project a{
-  background-color: #85af4b;
-  padding: 10px 25px;
-  text-decoration: none;
-  color:#ffff;
-  border-radius: 20px;
-  display:inline-block;
-}
+    .project a{
+        background-color: #85af4b;
+        padding: 10px 25px;
+        margin:10px;
+        text-decoration: none;
+        color:#ffff;
+        border-radius: 20px;
+        display:inline-block;
+    }
 
-.project a:hover{
-  background-color:black;
-}
+    .project a:hover{
+        background-color:black;
+    }
     
- .aboutme a:hover{
-  color:red;
-}
-
+    .aboutme a:hover{
+        color:red;
+    }
 
 </style>
 
 <body>
+
 
 <!-- Sidebar (hidden by default) -->
     <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:20%;min-width:300px" id="mySidebar">
@@ -82,21 +84,18 @@
         <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button">SKILLS</a>
         <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
         <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
-
-  </nav>
+    </nav>
 
 <!-- Top menu -->
 <div class="w3-top w3-border-bottom border-width:thick ">
     <div class="w3-white w3-xlarge " style="max-width:1500px; min-height:85px; margin:auto">
       <div class="w3-button  w3-left" style="padding:25px;"  onclick="w3_open()">☰</div>
-     
-      <div class="w3-center ">SHIDDARTH BISTA</div>
+        <div class="w3-center ">SHIDDARTH BISTA</div>
     </div>
-  </div>
+</div>
 
-<!--Header -->
-  <header class="homeimage w3-display-container  " style="max-width:1500px; height:600px;" id="home">
-    
+ <!--Header -->
+<header class="homeimage w3-display-container  " style="max-width:1500px; height:600px;" id="home">    
 </header>
 
 <!-- About me -->
@@ -112,7 +111,7 @@
      </p>
 
 
-     <!-----NODAL--->
+<!-----MODAL--->
      <div class="w3-display w3-center w3-container w3-xlarge" style="padding:16px">
       <button onclick="document.getElementById('coursework').style.display='block'" class="w3-button w3-black">Relevant Coursework</button></p>
      </div>
@@ -178,7 +177,7 @@
          
           </div>
         </div>
-        </div>
+      </div>
         
 
   <!-- Projects -->
@@ -197,6 +196,7 @@
               After matching with the tutor you can start scheduling an apoointment with the tutor.</p>
             <P>I worked on the front end part of this web-app using mostly JavaScript , CSS and HTML. Currently working on rebuilding this webapp on a ReactJS framework.</P>
             <a href="https://trustworthy-tutors.herokuapp.com/ " target="_blank">LIVE VERSION</a>
+            <a href="https://github.com/jimmoua/4033-thanos-tech" target="_blank"> VIEW CODE</a>
         </div>
        </div>
           <p></p><p></p><p></p><p></p>
@@ -212,6 +212,7 @@
             <p>Rock Paper Scissors Lizard Spock is a game inspired from the show THE BIG BANG THEORY. In this game you put your wits against the computer in a classic spinoff to the game rock paper scissors</p>
             <P>This was a small game made on Javascript with the help of HTML and CSS.Hope you enjoy it</P>
             <a href="https://shiddarthbista.github.io/RockPaperScissorsLizardSpock/ " target="_blank">LIVE VERSION</a>
+            <a href="https://github.com/shiddarthbista/RockPaperScissorsLizardSpock" target="_blank"> VIEW CODE</a>
           </div>
       
       </div>
@@ -228,7 +229,7 @@
         <i class="fa fa-envelope" style="width:30px"> </i> Email: shiddarthbista@gmail.com<br>
       </div>
       <div class="w3-col m6">
-        <form action="/action_page.php" target="_blank">
+        <form action="mailto:shiddarthbista@gmail.com" method="post" enctype="text/plain">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
             <div class="w3-half">
               <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
@@ -262,7 +263,7 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
-    </script>
+ </script>
 
 
 
